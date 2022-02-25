@@ -1,7 +1,5 @@
 plugins {
     id 'com.android.application'
-    id 'com.lee.junkcode'
-    id: 'maven-publish'
 }
 
 android {

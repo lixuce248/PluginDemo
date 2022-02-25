@@ -3,7 +3,7 @@ apply plugin: 'maven-publish'
 
 apply plugin: 'com.github.dcendents.android-maven'
 
-group = 'com.lee.junkcode'
+group = 'com.lee.junkcode.plugin'
 // 描述
 description = '这是一个独立插件'
 // 版本号
@@ -39,14 +39,14 @@ gradlePlugin {
         //插件名,每一个插件都可以有
         buildSrcTestPlugin {
             // 你的插件id，外部项目引用时需要
-            id = 'com.lee.junkcode.buildSrc'
+            id = 'com.lee.junkcode.plugin'
             // 插件的具体实现类
             implementationClass = 'com.lee.junkcode.BuildPluginDemo'
         }
     }
 }
 
-sourceCompatibility = JavaVersion.VERSION_11
+sourceCompatibility = JavaVersion.VERSION_1_8
 publishing {
     publications {
         maven(MavenPublication) {
