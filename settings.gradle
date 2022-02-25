@@ -1,0 +1,3 @@
+include ':app'
+include ':junk_code_plugin'
+rootProject.name = "PluginDemo"
